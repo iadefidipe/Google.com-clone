@@ -1,12 +1,10 @@
+
+
 /* ******* Global *******/
 
 html{
-    height: 100%;
     font-size: 100%;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-    
+    box-sizing: border-box;    
 }
 
 *, *::after, *::before{
@@ -19,11 +17,9 @@ html{
 }
 
 body{
-    max-height: inherit;
-    max-width: 100%;
     color: rgb(41, 41, 41);
     font-size: 0.75rem;
-    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -32,6 +28,17 @@ a{
     font-size: 0.75rem;
 }
 a:hover{
+    text-decoration: underline;
+}
+
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    font-size: 0.875rem;
+}
+a:hover {
     text-decoration: underline;
 }
 
@@ -231,7 +238,7 @@ footer a{
 
     .google-settings{
         order: 2;
-        justify-content: center;
+        
     }
 
 
@@ -252,5 +259,10 @@ footer a{
         ;
     }
 } 
+
+
+/* updates:css varibles
+footer wrap
+ */
 
 
