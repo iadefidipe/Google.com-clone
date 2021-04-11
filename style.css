@@ -4,6 +4,7 @@ html{
     font-size: 100%;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
     
 }
 
@@ -19,6 +20,9 @@ html{
 body{
     max-width: 100%;
     max-height: 100vh;
+    color: rgb(41, 41, 41);
+    font-size: 0.75rem;
+    overflow-x: visible;
 }
 
 a{
@@ -49,16 +53,21 @@ i{
 
 input{
     border: none;
-    padding: 0 1rem;
+    padding: 0 0.75rem;
     margin-left: 20px;
-    font-size:  0.875rem;
-    min-width: 54px;
+    font-size:  0.75rem;
+    max-width: 80%;
     height: 36px;
 }
 
 input:hover{
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     border: 1px solid #dadce0;
+}
+
+form{
+    margin: 1.5rem 0;
+    /* max-width: 100%; */
 }
 
 /****** Styling *********/
@@ -107,13 +116,11 @@ main{
     place-items: center;
 }
 
-form{
-    margin: 1.5rem 0;
-}
+
 
 .search{
     
-    width:30rem ;
+    width:80vw ;
     padding: 0.8rem;
     display: flex;
     align-items: center;
@@ -136,6 +143,7 @@ form{
 }
 
 .button{
+    width: 50vw;
     margin: 30px auto;
     display: flex;
     justify-content: center;
@@ -150,16 +158,4 @@ form{
 
 .language a{
     color: #1a0dab ;
-}
-
-/******* media queries ********/
-
-@media (max-width:510px) {
-
-    .search{
-    
-    width:23rem ;
-    
-
-}
 }
